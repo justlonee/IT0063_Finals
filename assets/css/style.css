@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: #ff8d3b;
+    --body-color: #f5f5f7;
+    --navbar-color: #F8F8F8;
+    --primary-font: "Jockey One", sans-serif;
+    --secondary-font: "Gemunu Libre", sans-serif;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: var(--secondary-font);
+}
+
+/* NAVBAR */
+nav {
+    background-color: var(--navbar-color);
+    padding: 1rem;
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.4);
+}
+
+.navbar-native {
+    margin: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbar input[type="text"] {
+    width: 40rem;
+    height: 2.25rem;
+}
+
+
+.brand-name h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    font-weight: 800;
+}
+
+.brand-name span {
+    color: var(--orange);
+}
+
+.navbar-drawer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30rem;
+    background-color: var(--navbar-color);
+    padding: 0.5rem 3rem;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--orange);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75) inset;
+}
+
+.navbar-drawer a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-drawer a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+/* END OF NARBAR */
