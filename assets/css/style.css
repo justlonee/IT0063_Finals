@@ -89,3 +89,35 @@ nav {
     margin: 2rem 0;
 }
 /* END OF HEADER CAROUSEL */
+
+
+/* FEATURED LAPTOPS CAROUSEL */
+.card-carousel {
+    /* border: 2px solid red; */
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.section-heading {
+    margin-bottom: 2rem;
+}
+
+.init-prod-card {
+    margin-left: 7rem;
+}
+.product-card {
+    min-width: 30%;
+    /* border: 2px solid red; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    border: 0 !important;
+}
+.card-img {
+    object-fit: cover;
+}
+.card-body {
+    padding: 0 2.1rem 1rem 2.1rem !important;
+}
+/* END OF FEATURED LAPTOPS CAROUSEL */
