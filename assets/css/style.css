@@ -44,6 +44,9 @@ nav {
     height: 2.25rem;
 }
 
+.brand-name a {
+    text-decoration: none;
+}
 
 .brand-name h1 {
     color: black;
