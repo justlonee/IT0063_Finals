@@ -14,5 +14,30 @@
 
 body {
     background-color: var(--body-color);
+}
+
+/* Initially hides the login sections */
+#login, #register, #pass-reset {
+    width: 30%;
+    margin: auto;
+    display: none;
+}
+
+/* Shows selected section once active */
+#login.active, #register.active, #pass-reset.active {
+    display: block;
+}
+
+#login .card-header, #register .card-header, #pass-reset .card-header {
+    color: white;
+    background-color: var(--orange);
+    font-family: var(--primary-font);
+}
+
+#login .card-body, #register .card-body, #pass-reset .card-body {
     font-family: var(--secondary-font);
+}
+
+#login a, #register a, #pass-reset a {
+    text-decoration: none;
 }
