@@ -147,7 +147,7 @@ nav {
 .pre-footer {
     background-color: var(--orange);
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     gap: 13rem;
