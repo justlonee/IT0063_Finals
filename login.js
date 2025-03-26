@@ -29,6 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Password validation
+    document.querySelector('#register form').addEventListener('submit', function(e) {
+        const password = document.getElementById('register-password').value;
+        const confirmPassword = document.getElementById('register-confirm-password').value;
+        
+        if (password !== confirmPassword) {
+            e.preventDefault();
+            alert('Passwords do not match. Please try again.');
+        }
+    });
+    
     // Toggle password visibility
     document.querySelectorAll('.toggle-password').forEach(button => {
         button.addEventListener('click', function() {
