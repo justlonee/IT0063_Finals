@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +27,20 @@
           <form>
             <div class="mb-3">
               <label for="login-email" class="form-label"><h5><b>Email Address</b></h5></label>
-              <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+              </div>
             </div>
             <div class="mb-3">
               <label for="login-password" class="form-label"><h5><b>Password</b></h5></label>
-              <input type="password" class="form-control" id="login-password" placeholder="••••••••••" required>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <input type="password" class="form-control" id="login-password" placeholder="••••••••••" required>
+                <button class="btn btn-outline-secondary toggle-password" type="button">
+                <i class="bi bi-eye-slash"></i>
+                </button>
+              </div>
               <div class="form-text"><b>Note: Be sure to properly secure and prevent sharing your credentials.</b></div>
             </div>
             <div class="mb-3 d-flex justify-content-between">
@@ -45,7 +56,6 @@
           </form>
         </div>
       </div>
-
       <!-- Register Section -->
       <div class="card" id="register">
         <div class="card-header text-center">
@@ -55,15 +65,30 @@
           <form>
             <div class="mb-3">
               <label for="register-email" class="form-label"><h5><b>Email Address</b></h5></label>
-              <input type="email" class="form-control" id="register-email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                <input type="email" class="form-control" id="register-email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+              </div>
             </div>
             <div class="mb-3">
               <label for="register-password" class="form-label"><h5><b>Password</b></h5></label>
-              <input type="password" class="form-control" id="register-password" placeholder="••••••••••" required>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <input type="password" class="form-control" id="register-password" placeholder="••••••••••" required>
+                <button class="btn btn-outline-secondary toggle-password" type="button">
+                <i class="bi bi-eye-slash"></i>
+                </button>
+              </div>
             </div>
             <div class="mb-3">
               <label for="register-confirm-password" class="form-label"><h5><b>Confirm Password</b></h5></label>
-              <input type="password" class="form-control" id="register-confirm-password" placeholder="••••••••••" required>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <input type="password" class="form-control" id="register-confirm-password" placeholder="••••••••••" required>
+                <button class="btn btn-outline-secondary toggle-password" type="button">
+                <i class="bi bi-eye-slash"></i>
+                </button>
+              </div>
               <div class="form-text"><b>Note: Be sure to properly secure and prevent sharing your credentials.</b></div>
             </div>
             <div class="mb-3 form-check">
@@ -83,7 +108,6 @@
           </form>
         </div>
       </div>
-
       <!-- Password Reset Section -->
       <div class="card" id="pass-reset">
         <div class="card-header text-center">
@@ -93,7 +117,10 @@
           <form>
             <div class="mb-3">
               <label for="pass-reset-email" class="form-label"><h5><b>Email Address</b></h5></label>
-              <input type="email" class="form-control" id="pass-reset-email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                <input type="email" class="form-control" id="pass-reset-email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+              </div>
               <div class="form-text"><b>Note: Make sure to be careful with your credentials.</b></div>
             </div>
             <div class="mb-3 form-check">
@@ -114,7 +141,6 @@
         </div>
       </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="login.js"></script>
