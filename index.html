@@ -9,6 +9,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,12 +122,13 @@
     </div>
     <!-- END OF HEADER CAROUSEL -->
 
+
     <!-- FEATURED LAPTOPS CAROUSEL -->
-    <div class="featured-laptops">
+    <div class="featured-laptops swiper">
       <h2 class="section-heading container"><strong>Featured Laptops. </strong> <span class="heading-subtitle">Take a look at what's new, right now.</span></h2>
 
-      <div class="card-carousel">
-        <div class="card mb-3 product-card init-prod-card">
+      <div class="card-carousel swiper-wrapper">
+        <div class="card mb-3 product-card init-prod-card swiper-slide">
           <img src="./assets/images/Microsoft Surface Pro.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Microsoft Surface Pro</h5>
@@ -134,7 +137,7 @@
           </div>
         </div>
   
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Acer Nitro V 15.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Acer Nitro V 15</h5>
@@ -143,7 +146,7 @@
           </div>
         </div>
   
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/ProArt Studiobook Pro 16 OLED.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">ProArt Studiobook Pro 16 OLED</h5>
@@ -152,7 +155,7 @@
           </div>
         </div>
   
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Acer Predator Helios Neo 16.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Acer Predator Helios Neo 16</h5>
@@ -161,7 +164,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Asus ROG Zephyrus G14.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Asus ROG Zephyrus G14</h5>
@@ -170,7 +173,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Asus TUF A15.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Asus TUF A15</h5>
@@ -179,7 +182,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/HP Omen 16.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">HP Omen 16</h5>
@@ -188,7 +191,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide last-card">
           <img src="./assets/images/Lenovo Legion 7i.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Lenovo Legion 7i</h5>
@@ -197,16 +200,18 @@
           </div>
         </div>
 
-      </div>
+      </div><br><br>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <!-- END OF FEATURED LAPTOPS CAROUSEL -->
     
     <!-- GAMING LAPTOPS CAROUSEL -->
-    <div class="gaming-laptops">
-      <h2 class="section-heading container"><strong>Gaming Laptops. </strong> <span class="heading-subtitle">Portable and powerful. Game easy, win big.</span></h2>
+    <div class="gaming-laptops swiper">
+      <h2 class="section-heading container"><strong>Featured Laptops. </strong> <span class="heading-subtitle">Take a look at what's new, right now.</span></h2>
 
-      <div class="card-carousel">
-        <div class="card mb-3 product-card init-prod-card">
+      <div class="card-carousel swiper-wrapper">
+        <div class="card mb-3 product-card init-prod-card swiper-slide">
           <img src="./assets/images/Microsoft Surface Pro.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Microsoft Surface Pro</h5>
@@ -215,7 +220,7 @@
           </div>
         </div>
   
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Acer Nitro V 15.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Acer Nitro V 15</h5>
@@ -224,7 +229,7 @@
           </div>
         </div>
   
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/ProArt Studiobook Pro 16 OLED.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">ProArt Studiobook Pro 16 OLED</h5>
@@ -233,7 +238,7 @@
           </div>
         </div>
   
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Acer Predator Helios Neo 16.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Acer Predator Helios Neo 16</h5>
@@ -242,7 +247,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Asus ROG Zephyrus G14.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Asus ROG Zephyrus G14</h5>
@@ -251,7 +256,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Asus TUF A15.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Asus TUF A15</h5>
@@ -260,7 +265,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/HP Omen 16.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">HP Omen 16</h5>
@@ -269,7 +274,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide last-card">
           <img src="./assets/images/Lenovo Legion 7i.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Lenovo Legion 7i</h5>
@@ -278,16 +283,18 @@
           </div>
         </div>
 
-      </div>
+      </div><br><br>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <!-- END OF GAMING LAPTOPS CAROUSEL -->
 
     <!-- OFFICE LAPTOPS CAROUSEL -->
-    <div class="office-laptops">
-      <h2 class="section-heading container"><strong>Office Laptops. </strong> <span class="heading-subtitle">Flexible and reliable for our professionals.</span></h2>
+    <div class="office-laptops swiper">
+      <h2 class="section-heading container"><strong>Featured Laptops. </strong> <span class="heading-subtitle">Take a look at what's new, right now.</span></h2>
 
-      <div class="card-carousel">
-        <div class="card mb-3 product-card init-prod-card">
+      <div class="card-carousel swiper-wrapper">
+        <div class="card mb-3 product-card init-prod-card swiper-slide">
           <img src="./assets/images/Microsoft Surface Pro.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Microsoft Surface Pro</h5>
@@ -296,7 +303,7 @@
           </div>
         </div>
   
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Acer Nitro V 15.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Acer Nitro V 15</h5>
@@ -305,7 +312,7 @@
           </div>
         </div>
   
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/ProArt Studiobook Pro 16 OLED.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">ProArt Studiobook Pro 16 OLED</h5>
@@ -314,7 +321,7 @@
           </div>
         </div>
   
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Acer Predator Helios Neo 16.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Acer Predator Helios Neo 16</h5>
@@ -323,7 +330,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Asus ROG Zephyrus G14.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Asus ROG Zephyrus G14</h5>
@@ -332,7 +339,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/Asus TUF A15.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Asus TUF A15</h5>
@@ -341,7 +348,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide">
           <img src="./assets/images/HP Omen 16.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">HP Omen 16</h5>
@@ -350,7 +357,7 @@
           </div>
         </div>
 
-        <div class="card mb-3 product-card">
+        <div class="card mb-3 product-card swiper-slide last-card">
           <img src="./assets/images/Lenovo Legion 7i.png" class="card-img-top card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Lenovo Legion 7i</h5>
@@ -359,7 +366,9 @@
           </div>
         </div>
 
-      </div>
+      </div><br><br>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <!-- END OF OFFICE LAPTOPS CAROUSEL -->
 
@@ -412,6 +421,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 
     <!-- ATTRIBUTIONS-->
