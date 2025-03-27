@@ -106,6 +106,7 @@ nav {
     display: flex;
     gap: 40px;
     overflow: visible;
+    padding-right: 7rem;
 }
 .section-heading {
     margin-bottom: 2rem;
@@ -122,6 +123,9 @@ nav {
     border-radius: 1rem;
     border: 0 !important;
     transition: 0.3s ease-in-out;
+}
+.last-card {
+    margin-right: 7rem;
 }
 .card-img {
     object-fit: cover;
