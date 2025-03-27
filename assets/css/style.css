@@ -36,6 +36,7 @@
     border-radius: 1rem;
     border: 0 !important;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .last-card {

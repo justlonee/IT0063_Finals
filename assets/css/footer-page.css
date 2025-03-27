@@ -1,1 +1,55 @@
 @import url("body-navbar-footer.css");
+
+#about-us-section, #faq-section {
+    width: 90%;
+    margin: auto;
+    padding: 5vh 3vw;
+    margin-top: 10vh;
+    border-radius: 20px;
+    margin-bottom: 20vh;
+    background-color: cornsilk;
+}
+
+#about-us-section h1, #faq-section h1 {
+    font-size: 4rem;
+    margin-bottom: 4vh;
+    font-family: var(--primary-font);
+}
+
+#about-us-section h3, #faq-section h3 {
+    font-size: 2.75rem;
+    margin-bottom: 2.75vh;
+}
+
+#about-us-section p, #faq-section p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#about-us-section span, #faq-section span {
+    color: var(--orange);
+}
+
+#faq-section li {
+    font-size: 2.75rem;
+}
+
+#faq-section ol li::marker {
+    color: var(--orange);
+}
+
+#team-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+#team-gallery img {
+    width: 400px;
+    height: 400px;
+}
+
+#team-gallery hr {
+    color: var(--orange);
+}
