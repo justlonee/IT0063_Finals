@@ -19,6 +19,7 @@ body {
 }
 
 /* NAVBAR */
+
 nav {
     background-color: var(--navbar-color);
     padding: 1rem;
@@ -89,9 +90,11 @@ nav {
     padding-right: 1rem;
     background-color: chocolate;
 }
+
 /* END OF NARBAR */
 
 /* FOOTER */
+
 .pre-footer {
     background-color: var(--orange);
     margin-top: 2rem;
@@ -130,4 +133,5 @@ nav {
     text-align: center;
     font-weight: 800;
 }
+
 /* END OF FOOTER */
