@@ -1,104 +1,15 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-:root{
-    --orange: #ff8d3b;
-    --body-color: #f5f5f7;
-    --navbar-color: #F8F8F8;
-    --primary-font: "Jockey One", sans-serif;
-    --secondary-font: "Gemunu Libre", sans-serif;
-}
-
-body {
-    background-color: var(--body-color);
-    font-family: var(--secondary-font);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),url("../images/texture-bg.jpg") !important;
-}
-
-/* NAVBAR */
-nav {
-    background-color: var(--navbar-color);
-    padding: 1rem;
-    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.4);
-}
-
-.main-nav {
-    position: sticky !important;
-    top: 0;
-    z-index: 99999;
-}
-
-.navbar-native {
-    margin: 0 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.searchbar input[type="text"] {
-    width: 40rem;
-    height: 2.25rem;
-}
-
-.brand-name a {
-    text-decoration: none;
-}
-
-.brand-name h1 {
-    color: black;
-    font-weight: 700;
-    font-size: 2rem;
-    font-family: var(--secondary-font);
-    font-weight: 800;
-}
-
-.brand-name span {
-    color: var(--orange);
-}
-
-.navbar-drawer {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 30rem;
-    background-color: var(--navbar-color);
-    padding: 0.5rem 3rem;
-    border-radius: 0 0 20px 20px;
-    background-color: var(--orange);
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-    clip-path: inset(0px -15px -15px -15px);
-}
-
-.navbar-drawer a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.5rem;
-    transition: 0.3s ease-in-out;
-}
-
-.navbar-drawer a:hover {
-    transform: scale(1.1);
-    border-radius: 5px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: chocolate;
-}
-/* END OF NARBAR */
+@import url("body-navbar-footer.css");
 
 /* HEADER CAROUSEL */
+
 .carousel {
     margin: 2rem 0;
 }
+
 /* END OF HEADER CAROUSEL */
 
-
 /* FEATURED LAPTOPS CAROUSEL */
+
 .card-carousel {
     /* border: 2px solid red; */
     height: fit-content;
@@ -106,7 +17,9 @@ nav {
     display: flex;
     gap: 40px;
     overflow: visible;
+    padding-right: 7rem;
 }
+
 .section-heading {
     margin-bottom: 2rem;
 }
@@ -114,6 +27,7 @@ nav {
 .init-prod-card {
     margin-left: 7rem;
 }
+
 .product-card {
     min-width: 27.5%;
     width: 4%;
@@ -123,16 +37,24 @@ nav {
     border: 0 !important;
     transition: 0.3s ease-in-out;
 }
+
+.last-card {
+    margin-right: 7rem;
+}
+
 .card-img {
     object-fit: cover;
 }
+
 .card-body {
     padding: 0 2.1rem 1rem 2.1rem !important;
 }
+
 .product-card:hover {
     transform: scale(1.05);
     z-index: 1;
 }
+
 .swiper-button-prev {
     color: white;
     background-color: var(--orange);
@@ -140,6 +62,7 @@ nav {
     border-radius: 50%;
     margin-left: 1.5rem;
 }
+
 .swiper-button-next {
     color: white;
     background-color: var(--orange);
@@ -147,6 +70,7 @@ nav {
     border-radius: 50%;
     margin-right: 1.5rem;
 }
+
 /* END OF FEATURED LAPTOPS CAROUSEL */
 
 /* GAMING LAPTOPS CAROUSEL */
@@ -156,44 +80,3 @@ nav {
 } */
 
 /* END OF GAMING LAPTOPS CAROUSEL */
-
-/* FOOTER */
-.pre-footer {
-    background-color: var(--orange);
-    margin-top: 2rem;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 13rem;
-}
-
-.pre-footer a {
-    font-size: 1.2rem;
-    color: #f5f5f7;
-    text-decoration: none;
-}
-
-.pre-footer a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-.pre-footer h2 {
-    font-weight: 700;
-}
-
-.pre-footer-logo img{
-    background-color: #f5f5f7;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    height: auto;
-    width: 25rem;
-}
-
-.footer {
-    background-color: var(--orange);
-    padding: 0.1rem;
-    text-align: center;
-    font-weight: 800;
-}
-/* END OF FOOTER */

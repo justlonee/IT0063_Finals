@@ -1,4 +1,5 @@
 /* Universal styling */
+
 * {
     padding: 0;
     margin: 0;
@@ -18,6 +19,7 @@ body {
 }
 
 /* Initially hides the sections */
+
 #login, #register, #pass-reset {
     width: 30%;
     margin: auto;
@@ -25,6 +27,7 @@ body {
 }
 
 /* Shows selected section once active */
+
 #login.active, #register.active, #pass-reset.active {
     display: block;
 }
