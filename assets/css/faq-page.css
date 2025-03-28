@@ -1,13 +1,15 @@
 @import url("body-navbar-footer.css");
 
 #about-us-section, #faq-section {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 5vh 3vw;
+    padding: 3rem 30rem !important;
     margin-top: 10vh;
     border-radius: 20px;
     margin-bottom: 20vh;
     background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
 }
 
 #about-us-section h1, #faq-section h1 {
