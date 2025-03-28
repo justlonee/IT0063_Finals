@@ -1,20 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var swiper = new Swiper(
-    ".featured-laptops, .gaming-laptops, .office-laptops",
-    {
-      slidesPerView: 3,
-      spaceBetween: 10,
-      slidesOffsetBefore: 20,
-      slidesOffsetAfter: 520,
+  new Swiper(".featured-laptops, .gaming-laptops, .office-laptops", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    slidesOffsetBefore: 20,
+    slidesOffsetAfter: 520,
 
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      loop: false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: false,
 
-      centeredSlides: false,
-      centeredSlidesBounds: true,
-    }
-  );
+    centeredSlides: false,
+    centeredSlidesBounds: true,
+  });
 });
