@@ -37,6 +37,7 @@
     border: 0 !important;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    min-height: 780px;
 }
 
 .last-card {
@@ -45,6 +46,7 @@
 
 .card-img {
     object-fit: cover;
+    height: 500px;
 }
 
 .card-body {

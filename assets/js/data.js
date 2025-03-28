@@ -13,10 +13,10 @@ const laptops = {
             OS: "Windows 11 Home"
         },
         images: {
-            1: "./assets/images/laptops/Acer Nitro V 15 1.png",
-            2: "./assets/images/laptops/Acer Nitro V 15 2.png",
-            3: "./assets/images/laptops/Acer Nitro V 15 3.png",
-            4: "./assets/images/laptops/Acer Nitro V 15 4.png"
+            1: "../assets/images/laptops/Acer Nitro V 15 1.png",
+            2: "../assets/images/laptops/Acer Nitro V 15 2.png",
+            3: "../assets/images/laptops/Acer Nitro V 15 3.png",
+            4: "../assets/images/laptops/Acer Nitro V 15 4.png"
         },
         reviews: "★★★★☆ 287 reviews",
     },
@@ -34,10 +34,10 @@ const laptops = {
             OS: "Windows 11 Home"
         },
         images: {
-            1: "./assets/images/laptops/Acer Predator Helios Neo 16 1.png",
-            2: "./assets/images/laptops/Acer Predator Helios Neo 16 2.png",
-            3: "./assets/images/laptops/Acer Predator Helios Neo 16 3.png",
-            4: "./assets/images/laptops/Acer Predator Helios Neo 16 4.png"
+            1: "../assets/images/laptops/Acer Predator Helios Neo 16 1.png",
+            2: "../assets/images/laptops/Acer Predator Helios Neo 16 2.png",
+            3: "../assets/images/laptops/Acer Predator Helios Neo 16 3.png",
+            4: "../assets/images/laptops/Acer Predator Helios Neo 16 4.png"
         },
         reviews: "★★★★★ 412 reviews",
     },
@@ -55,10 +55,10 @@ const laptops = {
             OS: "Windows 11 Home"
         },
         images: {
-            1: "./assets/images/laptops/Asus ROG Zephyrus G14 1.png",
-            2: "./assets/images/laptops/Asus ROG Zephyrus G14 2.png",
-            3: "./assets/images/laptops/Asus ROG Zephyrus G14 3.png",
-            4: "./assets/images/laptops/Asus ROG Zephyrus G14 4.png"
+            1: "../assets/images/laptops/Asus ROG Zephyrus G14 1.png",
+            2: "../assets/images/laptops/Asus ROG Zephyrus G14 2.png",
+            3: "../assets/images/laptops/Asus ROG Zephyrus G14 3.png",
+            4: "../assets/images/laptops/Asus ROG Zephyrus G14 4.png"
         },
         reviews: "★★★★★ 198 reviews",
     },
@@ -76,10 +76,10 @@ const laptops = {
             OS: "Windows 11 Home"
         },
         images: {
-            1: "./assets/images/laptops/Asus TUF A15 1.png",
-            2: "./assets/images/laptops/Asus TUF A15 2.png",
-            3: "./assets/images/laptops/Asus TUF A15 3.png",
-            4: "./assets/images/laptops/Asus TUF A15 4.png"
+            1: "../assets/images/laptops/Asus TUF A15 1.png",
+            2: "../assets/images/laptops/Asus TUF A15 2.png",
+            3: "../assets/images/laptops/Asus TUF A15 3.png",
+            4: "../assets/images/laptops/Asus TUF A15 4.png"
         },
         reviews: "★★★★☆ 356 reviews",
     },
@@ -97,10 +97,10 @@ const laptops = {
             OS: "Windows 11 Home"
         },
         images: {
-            1: "./assets/images/laptops/HP Omen 16 1.png",
-            2: "./assets/images/laptops/HP Omen 16 2.png",
-            3: "./assets/images/laptops/HP Omen 16 3.png",
-            4: "./assets/images/laptops/HP Omen 16 4.png"
+            1: "../assets/images/laptops/HP Omen 16 1.png",
+            2: "../assets/images/laptops/HP Omen 16 2.png",
+            3: "../assets/images/laptops/HP Omen 16 3.png",
+            4: "../assets/images/laptops/HP Omen 16 4.png"
         },
         reviews: "★★★★☆ 421 reviews",
     },
@@ -118,10 +118,10 @@ const laptops = {
             OS: "Windows 11 Pro"
         },
         images: {
-            1: "./assets/images/laptops/Lenovo Legion 7i 1.png",
-            2: "./assets/images/laptops/Lenovo Legion 7i 2.png",
-            3: "./assets/images/laptops/Lenovo Legion 7i 3.png",
-            4: "./assets/images/laptops/Lenovo Legion 7i 4.png"
+            1: "../assets/images/laptops/Lenovo Legion 7i 1.png",
+            2: "../assets/images/laptops/Lenovo Legion 7i 2.png",
+            3: "../assets/images/laptops/Lenovo Legion 7i 3.png",
+            4: "../assets/images/laptops/Lenovo Legion 7i 4.png"
         },
         reviews: "★★★★★ 187 reviews",
     },
@@ -139,10 +139,10 @@ const laptops = {
             OS: "Windows 11 Pro"
         },
         images: {
-            1: "./assets/images/laptops/Microsoft Surface Pro 1.png",
-            2: "./assets/images/laptops/Microsoft Surface Pro 2.png",
-            3: "./assets/images/laptops/Microsoft Surface Pro 3.png",
-            4: "./assets/images/laptops/Microsoft Surface Pro 4.png"
+            1: "../assets/images/laptops/Microsoft Surface Pro 1.png",
+            2: "../assets/images/laptops/Microsoft Surface Pro 2.png",
+            3: "../assets/images/laptops/Microsoft Surface Pro 3.png",
+            4: "../assets/images/laptops/Microsoft Surface Pro 4.png"
         },
         reviews: "★★★★★ 523 reviews",
     },
@@ -160,10 +160,10 @@ const laptops = {
             OS: "Windows 11 Pro"
         },
         images: {
-            1: "./assets/images/laptops/ProArt Studiobook Pro 16 OLED 1.png",
-            2: "./assets/images/laptops/ProArt Studiobook Pro 16 OLED 2.png",
-            3: "./assets/images/laptops/ProArt Studiobook Pro 16 OLED 3.png",
-            4: "./assets/images/laptops/ProArt Studiobook Pro 16 OLED 4.png"
+            1: "../assets/images/laptops/ProArt Studiobook Pro 16 OLED 1.png",
+            2: "../assets/images/laptops/ProArt Studiobook Pro 16 OLED 2.png",
+            3: "../assets/images/laptops/ProArt Studiobook Pro 16 OLED 3.png",
+            4: "../assets/images/laptops/ProArt Studiobook Pro 16 OLED 4.png"
         },
         reviews: "★★★★★ 89 reviews",
     }
@@ -186,7 +186,7 @@ productCards.forEach((card) => {
         console.log(productId);
 
         // redirect to product-info.html
-        window.location.href = 'product-info.html';
+        window.location.href = 'pages/product-info.html';
 
     });
 });
