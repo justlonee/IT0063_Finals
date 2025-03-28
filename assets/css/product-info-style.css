@@ -14,9 +14,8 @@ body {
     display: flex;
     justify-content: space-around !important;
     gap: 1rem;
-    margin: 2rem;
+    margin: 2rem 2rem 0 2rem;
 }
-
 .images {
     width: 50%;
     display: flex;
@@ -44,8 +43,6 @@ body {
     height: 100%;
     width: 100%;
 }
-
-
 .info {
     width: 50%;
     display: flex;
@@ -86,7 +83,6 @@ body {
     height: 100%;
     border-radius: 5px;
 }
-
 .add-to-cart-btn {
     padding: 1rem;
     border-radius: 7px;
@@ -95,6 +91,28 @@ body {
     margin-top: 1rem;
     text-align: center;
 }
+
+.basic-specs {
+    /* width: 100%; */
+    height: fit-content;
+    margin: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.13);
+    background-color: white;
+    padding: 2rem 4rem;
+}
+.specific-spec {
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.specific-spec > h3 {
+    width: 14rem;
+}
+
+
+
 
 /* Small devices (≥576px) */
 @media (max-width: 1020px) {
