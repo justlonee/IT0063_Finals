@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Info</title>
 
     <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/product-info-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/product-info-style.css" />
     <!-- ICON -->
-    <link rel="icon" href="../assets/images/Favicon.png">
-</head>
-<body>
+    <link rel="icon" href="../assets/images/Favicon.png" />
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
     <div class="img-info">
-        <div class="images">
-            <div class="image-selector">
-                <img src="" alt="..." class="image-repo">
-                <img src="" alt="..." class="image-repo">
-                <img src="" alt="..." class="image-repo">
-                <img src="" alt="..." class="image-repo">
-            </div>
-            <div class="display-img">
-                <img src="" alt="..." id="current-img">
-            </div>
+      <div class="images">
+        <div class="image-selector">
+          <img src="" alt="..." class="image-repo" />
+          <img src="" alt="..." class="image-repo" />
+          <img src="" alt="..." class="image-repo" />
+          <img src="" alt="..." class="image-repo" />
         </div>
-
-        <div class="info">
-            <h1 class="product-name" id="product-name"></h1>
-            <div class="reviews" id="reviews">
-                ⭐⭐⭐⭐⭐ 325 reviews
-            </div>
-            <h3 class="brand" id="brand-name">ASUS</h3>
-            <h4 class="description" id="description"></h4>
-            <hr style="width:100%;text-align:left;margin:1rem 0">
-            <div class="bottom">
-                <div class="labels">
-                    <h3>Price: </h3>
-                    <h3>Stock: </h3>
-                    <h3>Quantity: </h3>
-                </div>
-                <div class="status">
-                    <h2 class="price" id="price">₱82,000.00</h2>
-                    <h3 class="stock">✔ In Stock</h3>
-                    <select id="quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-            </div>
-            <div class="add-to-cart-btn">
-                ADD TO CART
-            </div>
-
+        <div class="display-img">
+          <img src="" alt="..." id="current-img" />
         </div>
+      </div>
+
+      <div class="info">
+        <h1 class="product-name" id="product-name"></h1>
+        <div class="reviews" id="reviews">⭐⭐⭐⭐⭐ 325 reviews</div>
+        <h3 class="brand" id="brand-name">ASUS</h3>
+        <h4 class="description" id="description"></h4>
+        <hr style="width: 100%; text-align: left; margin: 1rem 0" />
+        <div class="bottom">
+          <div class="labels">
+            <h3>Price:</h3>
+            <h3>Stock:</h3>
+            <h3>Quantity:</h3>
+          </div>
+          <div class="status">
+            <h2 class="price" id="price">₱82,000.00</h2>
+            <h3 class="stock">✔ In Stock</h3>
+            <select id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="add-to-cart-btn">ADD TO CART</div>
+      </div>
     </div>
-
     <script src="../assets/js/product-info.js"></script>
-</body>
+  </body>
 </html>

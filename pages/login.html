@@ -1,19 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Jockey+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Jockey+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Stylesheet & Favicon -->
-    <link rel="stylesheet" href="../assets/css/login.css">
-    <link rel="icon" href="../assets/images/Favicon.png">
+    <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="icon" href="../assets/images/Favicon.png" />
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
     <title>GizmoCart Login</title>
   </head>
   <body>
@@ -26,29 +41,60 @@
         <div class="card-body">
           <form>
             <div class="mb-3">
-              <label for="login-email" class="form-label"><h5><b>Email Address</b></h5></label>
+              <label for="login-email" class="form-label"
+                ><h5><b>Email Address</b></h5></label
+              >
               <div class="input-group">
-                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+                <span class="input-group-text"
+                  ><i class="bi bi-envelope"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="login-email"
+                  aria-describedby="emailHelp"
+                  placeholder="you@example.com"
+                  required
+                />
               </div>
             </div>
             <div class="mb-3">
-              <label for="login-password" class="form-label"><h5><b>Password</b></h5></label>
+              <label for="login-password" class="form-label"
+                ><h5><b>Password</b></h5></label
+              >
               <div class="input-group">
                 <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                <input type="password" class="form-control" id="login-password" placeholder="••••••••••" required>
-                <button class="btn btn-outline-secondary toggle-password" type="button">
-                <i class="bi bi-eye-slash"></i>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="login-password"
+                  placeholder="••••••••••"
+                  required
+                />
+                <button
+                  class="btn btn-outline-secondary toggle-password"
+                  type="button"
+                >
+                  <i class="bi bi-eye-slash"></i>
                 </button>
               </div>
-              <div class="form-text"><b>Note: Be sure to properly secure and prevent sharing your credentials.</b></div>
+              <div class="form-text">
+                <b
+                  >Note: Be sure to properly secure and prevent sharing your
+                  credentials.</b
+                >
+              </div>
             </div>
             <div class="mb-3 d-flex justify-content-between">
-              <a href="#" class="forgot-password-link"><h5>Forgot Password?</h5></a>
+              <a href="#" class="forgot-password-link"
+                ><h5>Forgot Password?</h5></a
+              >
               <a href="#" class="register-link"><h5>Register Account</h5></a>
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-primary w-100"><h5 class="m-1">Sign In</h5></button>
+              <button type="submit" class="btn btn-primary w-100">
+                <h5 class="m-1">Sign In</h5>
+              </button>
             </div>
             <div class="mb-3 text-center mt-3">
               <a href="../index.html"><h5>Return to Home</h5></a>
@@ -64,43 +110,92 @@
         <div class="card-body">
           <form>
             <div class="mb-3">
-              <label for="register-email" class="form-label"><h5><b>Email Address</b></h5></label>
+              <label for="register-email" class="form-label"
+                ><h5><b>Email Address</b></h5></label
+              >
               <div class="input-group">
-                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                <input type="email" class="form-control" id="register-email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+                <span class="input-group-text"
+                  ><i class="bi bi-envelope"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="register-email"
+                  aria-describedby="emailHelp"
+                  placeholder="you@example.com"
+                  required
+                />
               </div>
             </div>
             <div class="mb-3">
-              <label for="register-password" class="form-label"><h5><b>Password</b></h5></label>
+              <label for="register-password" class="form-label"
+                ><h5><b>Password</b></h5></label
+              >
               <div class="input-group">
                 <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                <input type="password" class="form-control" id="register-password" placeholder="••••••••••" required>
-                <button class="btn btn-outline-secondary toggle-password" type="button">
-                <i class="bi bi-eye-slash"></i>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="register-password"
+                  placeholder="••••••••••"
+                  required
+                />
+                <button
+                  class="btn btn-outline-secondary toggle-password"
+                  type="button"
+                >
+                  <i class="bi bi-eye-slash"></i>
                 </button>
               </div>
             </div>
             <div class="mb-3">
-              <label for="register-confirm-password" class="form-label"><h5><b>Confirm Password</b></h5></label>
+              <label for="register-confirm-password" class="form-label"
+                ><h5><b>Confirm Password</b></h5></label
+              >
               <div class="input-group">
                 <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                <input type="password" class="form-control" id="register-confirm-password" placeholder="••••••••••" required>
-                <button class="btn btn-outline-secondary toggle-password" type="button">
-                <i class="bi bi-eye-slash"></i>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="register-confirm-password"
+                  placeholder="••••••••••"
+                  required
+                />
+                <button
+                  class="btn btn-outline-secondary toggle-password"
+                  type="button"
+                >
+                  <i class="bi bi-eye-slash"></i>
                 </button>
               </div>
-              <div class="form-text"><b>Note: Be sure to properly secure and prevent sharing your credentials.</b></div>
+              <div class="form-text">
+                <b
+                  >Note: Be sure to properly secure and prevent sharing your
+                  credentials.</b
+                >
+              </div>
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="register-checkbox" required>
-              <label class="form-check-label" for="register-checkbox"><b>I agree with the terms of service.</b></label>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="register-checkbox"
+                required
+              />
+              <label class="form-check-label" for="register-checkbox"
+                ><b>I agree with the terms of service.</b></label
+              >
             </div>
             <div class="mb-3 d-flex justify-content-between">
-              <a href="#" class="forgot-password-link"><h5>Forgot Password?</h5></a>
+              <a href="#" class="forgot-password-link"
+                ><h5>Forgot Password?</h5></a
+              >
               <a href="#" class="login-link"><h5>Login Account</h5></a>
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-primary w-100"><h5 class="m-1">Create User</h5></button>
+              <button type="submit" class="btn btn-primary w-100">
+                <h5 class="m-1">Create User</h5>
+              </button>
             </div>
             <div class="mb-3 text-center mt-3">
               <a href="../index.html"><h5>Return to Home</h5></a>
@@ -116,23 +211,45 @@
         <div class="card-body">
           <form>
             <div class="mb-3">
-              <label for="pass-reset-email" class="form-label"><h5><b>Email Address</b></h5></label>
+              <label for="pass-reset-email" class="form-label"
+                ><h5><b>Email Address</b></h5></label
+              >
               <div class="input-group">
-                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                <input type="email" class="form-control" id="pass-reset-email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+                <span class="input-group-text"
+                  ><i class="bi bi-envelope"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="pass-reset-email"
+                  aria-describedby="emailHelp"
+                  placeholder="you@example.com"
+                  required
+                />
               </div>
-              <div class="form-text"><b>Note: Make sure to be careful with your credentials.</b></div>
+              <div class="form-text">
+                <b>Note: Make sure to be careful with your credentials.</b>
+              </div>
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="pass-reset-checkbox" required>
-              <label class="form-check-label" for="pass-reset-checkbox"><b>Confirm password reset?</b></label>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="pass-reset-checkbox"
+                required
+              />
+              <label class="form-check-label" for="pass-reset-checkbox"
+                ><b>Confirm password reset?</b></label
+              >
             </div>
             <div class="mb-3 d-flex justify-content-between">
               <a href="#" class="login-link"><h5>Login Account</h5></a>
               <a href="#" class="register-link"><h5>Register Account</h5></a>
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-primary w-100"><h5 class="m-1">Reset Password</h5></button>
+              <button type="submit" class="btn btn-primary w-100">
+                <h5 class="m-1">Reset Password</h5>
+              </button>
             </div>
             <div class="mb-3 text-center mt-3">
               <a href="../index.html"><h5>Return to Home</h5></a>
@@ -141,8 +258,11 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="../assets/js/login.js"></script>
   </body>
 </html>
