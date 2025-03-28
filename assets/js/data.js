@@ -1,3 +1,6 @@
+const ss = "<i class='fa-solid fa-star' style='color: #FFD43B;'></i>";      // solid star
+const hs = "<i class='fa-regular fa-star' style='color: #FFD43B;'></i>";    // hollow star
+
 const laptops = {
   1: {
     name: "Acer Nitro V 15",
@@ -19,7 +22,7 @@ const laptops = {
       3: "./assets/images/laptops/Acer Nitro V 15 3.png",
       4: "./assets/images/laptops/Acer Nitro V 15 4.png",
     },
-    reviews: "★★★★☆ 287 reviews",
+    reviews: `${ss}${ss}${ss}${ss}${hs} 287 reviews`,
   },
   2: {
     name: "Acer Predator Helios Neo 16",
@@ -41,7 +44,7 @@ const laptops = {
       3: "./assets/images/laptops/Acer Predator Helios Neo 16 3.png",
       4: "./assets/images/laptops/Acer Predator Helios Neo 16 4.png",
     },
-    reviews: "★★★★★ 412 reviews",
+    reviews: `${ss}${ss}${ss}${ss}${ss} 412 reviews`,
   },
   3: {
     name: "Asus ROG Zephyrus G14",
@@ -63,7 +66,7 @@ const laptops = {
       3: "./assets/images/laptops/Asus ROG Zephyrus G14 3.png",
       4: "./assets/images/laptops/Asus ROG Zephyrus G14 4.png",
     },
-    reviews: "★★★★★ 198 reviews",
+    reviews: `${ss}${ss}${ss}${ss}${ss} 198 reviews`,
   },
   4: {
     name: "Asus TUF A15",
@@ -85,7 +88,7 @@ const laptops = {
       3: "./assets/images/laptops/Asus TUF A15 3.png",
       4: "./assets/images/laptops/Asus TUF A15 4.png",
     },
-    reviews: "★★★★☆ 356 reviews",
+    reviews: `${ss}${ss}${ss}${ss}${hs} 356 reviews`,
   },
   5: {
     name: "HP Omen 16",
@@ -107,7 +110,7 @@ const laptops = {
       3: "./assets/images/laptops/HP Omen 16 3.png",
       4: "./assets/images/laptops/HP Omen 16 4.png",
     },
-    reviews: "★★★★☆ 421 reviews",
+    reviews: `${ss}${ss}${ss}${ss}${hs} 421 reviews`,
   },
   6: {
     name: "Lenovo Legion 7i",
@@ -129,7 +132,7 @@ const laptops = {
       3: "./assets/images/laptops/Lenovo Legion 7i 3.png",
       4: "./assets/images/laptops/Lenovo Legion 7i 4.png",
     },
-    reviews: "★★★★★ 187 reviews",
+    reviews: `${ss}${ss}${ss}${ss}${ss} 187 reviews`,
   },
   7: {
     name: "Microsoft Surface Pro",
@@ -151,7 +154,7 @@ const laptops = {
       3: "./assets/images/laptops/Microsoft Surface Pro 3.png",
       4: "./assets/images/laptops/Microsoft Surface Pro 4.png",
     },
-    reviews: "★★★★★ 523 reviews",
+    reviews: `${ss}${ss}${ss}${ss}${ss} 523 reviews`,
   },
   8: {
     name: "ProArt Studiobook Pro 16 OLED",
@@ -173,7 +176,7 @@ const laptops = {
       3: "./assets/images/laptops/ProArt Studiobook Pro 16 OLED 3.png",
       4: "./assets/images/laptops/ProArt Studiobook Pro 16 OLED 4.png",
     },
-    reviews: "★★★★★ 89 reviews",
+    reviews: `${ss}${ss}${ss}${ss}${ss} 89 reviews`,
   },
 };
 
