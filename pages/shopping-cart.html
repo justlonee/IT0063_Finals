@@ -9,12 +9,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a2bc6a1181.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
     />
-    <title>Shopping Cart</title>
+    <title>Your Shopping Cart</title>
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,6 +73,162 @@
       </div>
     </div>
     <!-- END OF NAVBAR -->
+    <!-- SHOPPING CART BODY -->
+    <h1 id="page-title">My Shopping Cart <span>(0 Items)</span></h1>
+    <div class="shopping-cart-container">
+      <div class="item-card-container">
+        <div class="card">
+          <div class="card-header" id="item-card-header">
+            <div><b>Product</b></div>
+            <div><b>Quantity</b></div>
+            <div><b>Total</b></div>
+          </div>
+          <div class="card-body" id="item-card-body">
+            <!-- PLACEHOLDER TEMPLATE FOR PRODUCT ITEMS -->
+            <!-- YOU CAN CHANGE THE CLASS NAME AND CONTENTS IF YOU WANT -->
+            <!-- JUST MAKE SURE TO CHANGE CSS AS NECESSARY -->
+            
+            <!-- PLACEHOLDER ITEM #1-->
+            <div class="placeholder-item">
+              <div class="product-item">
+                <div>
+                  <img src="../assets/images/Favicon.png" class="product-img">
+                </div>
+                <div>
+                  <h5 class="card-title product-name">Example Product #1</h5>
+                  <p class="card-text product-cost"><span>₱10.00</span></p>
+                </div>
+              </div>
+              <div class="quantity-selector">
+                <div class="quantity-selector-tally">
+                  <div class="subtract-button-container">
+                    <i class="fa-solid fa-square-minus fa-2xl subtract-button"></i>
+                  </div>
+                  <div class="item-quantity-container">
+                    <h1 class="item-quantity">1</h1>
+                  </div>
+                  <div class="add-button-container">
+                    <i class="fa-solid fa-square-plus fa-2xl add-button"></i>
+                  </div>
+                </div>
+                <p class="card-text remove-product">Remove</p>
+              </div>
+              <div class="product-total">
+                <p class="product-total-value">₱10.00</p>
+              </div>
+            </div>
+            <hr>
+            <!-- PLACEHOLDER ITEM #2 -->
+            <div class="placeholder-item">
+              <div class="product-item">
+                <div>
+                  <img src="../assets/images/Favicon.png" class="product-img">
+                </div>
+                <div>
+                  <h5 class="card-title product-name">Example Product #2</h5>
+                  <p class="card-text product-cost"><span>₱20.00</span></p>
+                </div>
+              </div>
+              <div class="quantity-selector">
+                <div class="quantity-selector-tally">
+                  <div class="subtract-button-container">
+                    <i class="fa-solid fa-square-minus fa-2xl subtract-button"></i>
+                  </div>
+                  <div class="item-quantity-container">
+                    <h1 class="item-quantity">1</h1>
+                  </div>
+                  <div class="add-button-container">
+                    <i class="fa-solid fa-square-plus fa-2xl add-button"></i>
+                  </div>
+                </div>
+                <p class="card-text remove-product">Remove</p>
+              </div>
+              <div class="product-total">
+                <p class="product-total-value">₱20.00</p>
+              </div>
+            </div>
+            <hr>
+            <!-- PLACEHOLDER ITEM #3 -->
+            <div class="placeholder-item">
+              <div class="product-item">
+                <div>
+                  <img src="../assets/images/Favicon.png" class="product-img">
+                </div>
+                <div>
+                  <h5 class="card-title product-name">Example Product #3</h5>
+                  <p class="card-text product-cost"><span>₱30.00</span></p>
+                </div>
+              </div>
+              <div class="quantity-selector">
+                <div class="quantity-selector-tally">
+                  <div class="subtract-button-container">
+                    <i class="fa-solid fa-square-minus fa-2xl subtract-button"></i>
+                  </div>
+                  <div class="item-quantity-container">
+                    <h1 class="item-quantity">1</h1>
+                  </div>
+                  <div class="add-button-container">
+                    <i class="fa-solid fa-square-plus fa-2xl add-button"></i>
+                  </div>
+                </div>
+                <p class="card-text remove-product">Remove</p>
+              </div>
+              <div class="product-total">
+                <p class="product-total-value">₱30.00</p>
+              </div>
+            </div>
+            <hr>
+            <div class="placeholder-item">
+              <div class="product-item">
+                <div>
+                  <img src="../assets/images/Favicon.png" class="product-img">
+                </div>
+                <div>
+                  <h5 class="card-title product-name">Example Product #4</h5>
+                  <p class="card-text product-cost"><span>₱40.00</span></p>
+                </div>
+              </div>
+              <div class="quantity-selector">
+                <div class="quantity-selector-tally">
+                  <div class="subtract-button-container">
+                    <i class="fa-solid fa-square-minus fa-2xl subtract-button"></i>
+                  </div>
+                  <div class="item-quantity-container">
+                    <h1 class="item-quantity">1</h1>
+                  </div>
+                  <div class="add-button-container">
+                    <i class="fa-solid fa-square-plus fa-2xl add-button"></i>
+                  </div>
+                </div>
+                <p class="card-text remove-product">Remove</p>
+              </div>
+              <div class="product-total">
+                <p class="product-total-value">₱40.00</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <!-- CHECKOUT SECTION -->
+      <div class="checkout-container">
+        <div class="card">
+          <div class="card-body checkout-container-inner">
+            <div class="total-cost-container">
+              <h4><b>Total</b></h4>
+              <h4 class="total-cost">₱100.00</h4>
+            </div>
+            <hr>
+            <h4><b>Order Instructions</b></h4>
+            <textarea class="order-instructions"></textarea>
+            <button type="button" class="btn send-instructions">Save Comment</button>
+            <hr>
+            <p class="card-text checkout-note">Taxes and shipping calculated at checkout.</p>
+            <button type="button" class="btn checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SHOPPING CART BODY -->
     <!-- FOOTER -->
     <div class="pre-footer">
       <div class="laptop-brands">
@@ -126,5 +284,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../assets/js/shopping-cart.js"></script>
   </body>
 </html>
