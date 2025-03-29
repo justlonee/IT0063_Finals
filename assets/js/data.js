@@ -267,7 +267,7 @@ const laptops = {
     reviews: `${ss}${ss}${ss}${ss}${hs} 189 reviews`,
   },
   13: {
-    name: "Lenovo LOQ 15AHP9",
+    name: "Lenovo LOQ",
     brand: "Lenovo",
     description:
       "The Lenovo LOQ is a gaming laptop that offers a compelling blend of performance and affordability. Designed for gamers, it features a high-refresh-rate display for smooth visuals and responsive gameplay. Powered by the latest processors and dedicated graphics, it delivers reliable performance for modern gaming titles. Its robust cooling system ensures optimal performance during extended gaming sessions. With a sleek design and customizable features, the Lenovo LOQ caters to gamers seeking a balance between quality and value.",
@@ -281,10 +281,10 @@ const laptops = {
       OS: "Windows 11 Home",
     },
     images: {
-      1: "./assets/images/laptops/Lenovo LOQ 15AHP9 1.png",
-      2: "./assets/images/laptops/Lenovo LOQ 15AHP9 2.png",
-      3: "./assets/images/laptops/Lenovo LOQ 15AHP9 3.png",
-      4: "./assets/images/laptops/Lenovo LOQ 15AHP9 4.png",
+      1: "./assets/images/laptops/Lenovo LOQ 1.png",
+      2: "./assets/images/laptops/Lenovo LOQ 2.png",
+      3: "./assets/images/laptops/Lenovo LOQ 3.png",
+      4: "./assets/images/laptops/Lenovo LOQ 4.png",
     },
     reviews: `${ss}${ss}${ss}${ss}${hs} 243 reviews`,
   },
