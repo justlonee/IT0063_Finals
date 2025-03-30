@@ -340,7 +340,8 @@ const laptops = {
     price: "₱159,990",
     specs: {
       processor: "Intel Core Ultra 9 185H (16 cores, 2.3 GHz to 5.1 GHz)",
-      display: "16-inch QHD+ (2560 x 1600), 240Hz, 3ms, 100% sRGB, NVIDIA G-SYNC",
+      display:
+        "16-inch QHD+ (2560 x 1600), 240Hz, 3ms, 100% sRGB, NVIDIA G-SYNC",
       gpu: "NVIDIA GeForce RTX 4070 with 8GB GDDR6",
       memory: "32GB DDR5 5600 MT/s",
       storage: "1TB PCIe NVMe SSD",
@@ -362,7 +363,8 @@ const laptops = {
     price: "₱179,990",
     specs: {
       processor: "Intel Core Ultra 7 155H (16 cores, 1.4 GHz to 4.8 GHz)",
-      display: "16-inch QHD+ (2560 x 1600), 240Hz, 3ms, 100% DCI-P3, NVIDIA G-SYNC",
+      display:
+        "16-inch QHD+ (2560 x 1600), 240Hz, 3ms, 100% DCI-P3, NVIDIA G-SYNC",
       gpu: "NVIDIA GeForce RTX 4070 with 8GB GDDR6",
       memory: "16GB LPDDR5X 7467 MT/s",
       storage: "1TB PCIe NVMe SSD",
@@ -384,7 +386,8 @@ const laptops = {
     price: "₱209,990",
     specs: {
       processor: "Intel Core Ultra 9 185H (16 cores, 2.3 GHz to 5.1 GHz)",
-      display: "18-inch QHD+ (2560 x 1600), 240Hz, 3ms, 100% sRGB, NVIDIA G-SYNC",
+      display:
+        "18-inch QHD+ (2560 x 1600), 240Hz, 3ms, 100% sRGB, NVIDIA G-SYNC",
       gpu: "NVIDIA GeForce RTX 4080 with 12GB GDDR6",
       memory: "32GB DDR5 5600 MT/s",
       storage: "2TB PCIe NVMe SSD",
@@ -551,31 +554,45 @@ const laptops = {
       4: "./assets/images/laptops/HP Omen 16 4.png",
     },
     reviews: `${ss}${ss}${ss}${ss}${hs} 421 reviews`,
-  }
+  },
 };
 
-// redirect to product-info.html with correct data
-const productCards = document.querySelectorAll(".product-card");
+document.addEventListener("DOMContentLoaded", function () {
+  const path = window.location.pathname.split("/").pop(); // Get the current HTML file name
 
-productCards.forEach((card) => {
-  card.addEventListener("click", function () {
-    console.log("card clicked");
-
-    const productId = this.getAttribute("data-laptop-id");
-    const models = laptops[productId];
-
-    // store data in localStorage
-    localStorage.setItem("selectedLaptop", JSON.stringify(models));
-
-    console.log(productId);
-
-    // redirect to product-info.html
-    window.location.href = "pages/product-info.html";
-  });
+  if (path === "index.html") {
+    atIndexHTML();
+  } else if (
+    path === "acer-page.html" ||
+    path === "asus-page.html" ||
+    path === "lenovo-page.html" ||
+    path === "alienware-page.html" ||
+    path === "hp-page.html"
+  ) {
+    atBrandPageHTML();
+  }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+// redirect to product-info.html with correct data
+function atIndexHTML() {
   const productCards = document.querySelectorAll(".product-card");
+
+  productCards.forEach((card) => {
+    card.addEventListener("click", function () {
+      console.log("card clicked");
+
+      const productId = this.getAttribute("data-laptop-id");
+      const models = laptops[productId];
+
+      // store data in localStorage
+      localStorage.setItem("selectedLaptop", JSON.stringify(models));
+
+      console.log(productId);
+
+      // redirect to product-info.html
+      window.location.href = "pages/product-info.html";
+    });
+  });
 
   productCards.forEach((card) => {
     const laptopId = card.getAttribute("data-laptop-id");
@@ -593,4 +610,47 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error(`Laptop with ID ${laptopId} not found`);
     }
   });
-});
+
+  
+}
+
+function atBrandPageHTML() {
+  const productCards = document.querySelectorAll(".product-card");
+
+  productCards.forEach((card) => {
+    card.addEventListener("click", function () {
+      console.log("card clicked");
+      event.preventDefault();
+
+      const productId = this.getAttribute("data-laptop-id");
+      const models = laptops[productId];
+
+      // store data in localStorage
+      localStorage.setItem("selectedLaptop", JSON.stringify(models));
+
+      console.log(productId);
+
+      // redirect to product-info.html
+      window.location.href = "product-info.html";
+    });
+  });
+
+  productCards.forEach((card) => {
+    const laptopId = card.getAttribute("data-laptop-id");
+    const laptop = laptops[laptopId];
+
+    if (laptop) {
+      card.querySelector(".card-img-top").src = "." + laptop.images[1];
+      card.querySelector(".card-img-top").alt = laptop.name;
+
+      card.querySelector(".card-title").textContent = laptop.name;
+      card.querySelector(".card-text").textContent = laptop.description;
+      card.querySelector("h5.card-title:last-of-type").textContent =
+        laptop.price;
+    } else {
+      console.error(`Laptop with ID ${laptopId} not found`);
+    }
+  });
+  
+}
+
