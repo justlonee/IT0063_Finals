@@ -85,7 +85,7 @@
     gap: 20px;
 }
 
-.quantity-selector-tally i:hover, .remove-product:hover {
+.quantity-selector-tally i:hover, .remove-product:hover, .x-button:hover {
     cursor: pointer;
     color: var(--orange);
 }
@@ -124,11 +124,11 @@
     background-color: chocolate !important;
 }
 
-.send-instructions:active, .checkout-btn:active {
+.send-instructions:active, .checkout-btn:active, .purchase-btn:active {
     transform: scale(0.95);
 }
 
-.subtract-button:active, .add-button:active {
+.subtract-button:active, .add-button:active, .x-button:active {
     transform: scale(0.85);
 }
 
@@ -140,7 +140,36 @@
     width: 100%;
 }
 
+.comment-notice {
+    margin: 0;
+    display: none;
+}
+
+#customer-comment {
+    resize: none;
+    overflow-y: auto;
+    height: 100px !important;
+    width: 100%;
+}
+
 /* bold styling, can be changed if so wishes */
-.product-name, .product-cost, .remove-product, .product-total-value, .total-cost {
+.product-name, .product-cost, .remove-product, .product-total-value, .total-cost, .comment-notice, #checkoutModalLabel, #order-form label, .form-header {
     font-weight: bold;
+}
+
+.modal-dialog {
+    height: 57.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 57.5vh;
+}
+
+.modal-body {
+    flex: 1;
+    overflow-y: auto;
 }
