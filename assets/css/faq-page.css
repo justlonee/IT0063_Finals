@@ -1,65 +1,70 @@
 @import url("body-navbar-footer.css");
 
-#about-us-section, #faq-section {
-    width: 80%;
-    margin: auto;
-    padding: 3rem 15rem !important;
-    margin-top: 10vh;
-    border-radius: 20px;
-    margin-bottom: 20vh;
-    background-color: cornsilk;
-    display: flex;
-    flex-direction: column;
-    border-top: 5px solid var(--orange);
-    border-bottom: 5px solid var(--orange);
+#about-us-section,
+#faq-section {
+  width: 80%;
+  margin: auto;
+  padding: 3rem 15rem !important;
+  margin-top: 10vh;
+  border-radius: 20px;
+  margin-bottom: 20vh;
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  border-top: 5px solid var(--orange);
+  border-bottom: 5px solid var(--orange);
 }
 
 #about-us-section {
-    padding: 3rem 5rem !important;
+  padding: 3rem 5rem !important;
 }
 
-#about-us-section h1, #faq-section h1 {
-    font-size: 4rem;
-    margin-bottom: 4vh;
-    font-family: var(--primary-font);
+#about-us-section h1,
+#faq-section h1 {
+  font-size: 4rem;
+  margin-bottom: 4vh;
+  font-family: var(--primary-font);
 }
 
-#about-us-section h3, #faq-section h3 {
-    font-size: 2.75rem;
-    margin-bottom: 2.75vh;
+#about-us-section h3,
+#faq-section h3 {
+  font-size: 2.75rem;
+  margin-bottom: 2.75vh;
 }
 
-#about-us-section p, #faq-section p {
-    font-size: 1.5rem;
-    text-align: justify;
+#about-us-section p,
+#faq-section p {
+  font-size: 1.5rem;
+  text-align: justify;
 }
 
-#about-us-section span, #faq-section span {
-    color: var(--orange);
+#about-us-section span,
+#faq-section span {
+  color: var(--orange);
 }
 
 #faq-section li {
-    font-size: 2.75rem;
+  font-size: 2.75rem;
 }
 
 #faq-section ol li::marker {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 #team-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 
 #team-gallery img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 #team-gallery hr {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 

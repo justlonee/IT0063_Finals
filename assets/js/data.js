@@ -610,8 +610,6 @@ function atIndexHTML() {
       console.error(`Laptop with ID ${laptopId} not found`);
     }
   });
-
-  
 }
 
 function atBrandPageHTML() {
@@ -651,6 +649,4 @@ function atBrandPageHTML() {
       console.error(`Laptop with ID ${laptopId} not found`);
     }
   });
-  
 }
-
