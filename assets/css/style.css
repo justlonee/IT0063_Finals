@@ -88,3 +88,30 @@
 } */
 
 /* END OF GAMING LAPTOPS CAROUSEL */
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .product-card{
+        margin: 0 !important;
+    }
+
+    .card{
+        height: auto !important;
+        width: auto !important;
+    }
+
+
+    .card-img{
+        object-fit: cover !important;
+        padding: 5px !important;
+        height: 15rem;
+        
+    }
+
+   .swiper-button-next, .swiper-button-prev{
+        display: none;
+   }
+
+
+}

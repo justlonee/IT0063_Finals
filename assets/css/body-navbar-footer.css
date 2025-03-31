@@ -23,6 +23,7 @@ body {
 nav {
     background-color: var(--navbar-color);
     padding: 1rem;
+    max-width: 100%;
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.4);
     -webkit-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.4);
@@ -84,8 +85,9 @@ nav {
     font-size: 1.2rem;
 }
 
-.brand-name a {
+.nav-links ul{
     text-decoration: none;
+    list-style-type: none;
 }
 
 .brand-name h1 {
@@ -98,6 +100,15 @@ nav {
 
 .brand-name span {
     color: var(--orange);
+}
+
+.burger{
+    cursor: pointer;
+    font-size: 24px;
+    align-items: center;
+    /* margin-top: -7px; */
+    margin-right: 10px;
+    display: none;
 }
 
 .navbar-drawer {
@@ -174,3 +185,98 @@ nav {
 
 
 /* END OF FOOTER */
+
+
+/* Responsive */
+/* 
+.card {
+    width: 100%;
+    max-width: 4000px;
+    margin: auto;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+} */
+
+
+@media (max-width: 768px) {
+
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background: gray;
+        position: absolute;
+        top: 50px;
+        width: 250px;
+        padding: 10px;
+
+    }
+
+    .nav-links.show{
+        display: flex;
+    }
+
+    .nav-links li{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-links a{
+        color: white;
+        text-decoration: none;
+        
+    }
+
+    .brand-name h1{
+        margin: 0 !important;
+    }
+
+    .carousel{
+        margin-top: 0 !important;
+    }
+
+    .navbar-native{
+        margin: 0 1.2rem;
+        align-items: center;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .navbar-drawer, .search-input, .login, .searchbar, .card-text{
+        display: none !important;
+    }
+
+    .product-card{
+        margin: 0 !important;
+    }
+
+    .card{
+        height: 20rem !important;
+    }
+
+
+    .pre-footer{
+        display: block;
+        text-align: center;
+    }
+    
+
+    .pre-footer-logo img{
+        height: auto;
+        width: 85px;
+    }
+
+
+    .laptop-brands, .about-us, .socials{
+        margin-bottom: 20px;
+    }
+
+
+}
