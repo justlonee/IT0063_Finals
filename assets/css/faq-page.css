@@ -61,3 +61,31 @@
 #team-gallery hr {
     color: var(--orange);
 }
+
+
+/* Responsiveness */
+
+@media (max-width: 768px){
+    #about-us-section, #faq-section{
+        width: auto;
+        padding: 3rem 2rem !important;
+    }
+
+    #about-us-section h1, #faq-section h1 {
+        font-size: 3rem !important;
+        margin-bottom: 4vh;
+        font-family: var(--primary-font);
+    }
+    
+    #about-us-section li, #faq-section li {
+        font-size: 2rem !important;
+        margin-bottom: 2.75vh;
+    }
+    
+    #about-us-section p, #faq-section p {
+        font-size: 1.5rem !important;
+        text-align: justify;
+    }
+
+}
+

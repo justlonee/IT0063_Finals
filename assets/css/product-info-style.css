@@ -121,7 +121,31 @@ body {
         align-items: center;
     }
     .images, .info {
-        width: 90%;
+        width: 100%;
     }
+
+
+    .image-selector{
+        display: none !important;
+    }
+
+    .info{
+        width: auto;
+    }
+
+    .add-to-cart-btn{
+        margin: auto;
+        width: 75%;
+    }
+
+    .basic-specs{
+        padding: 1rem 2rem;
+    }
+
+    .specific-spec{
+        margin: 0;
+    }
+
+
 }
 
