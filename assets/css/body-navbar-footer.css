@@ -178,14 +178,13 @@ a {
   font-weight: 700;
 }
 
-.pre-footer-logo img{
-    max-width: 100%;
-    background-color: #f5f5f7;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    height: auto;
-    width: 80%;
-    
+.pre-footer-logo img {
+  max-width: 100%;
+  background-color: #f5f5f7;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  height: auto;
+  width: 80%;
 }
 
 .footer {
@@ -213,132 +212,130 @@ a {
 } */
 
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--orange);
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    padding: 10px;
+  }
 
+  .nav-links.show {
+    display: flex;
+  }
 
-    .nav-links{
-        display: none;
-        flex-direction: column;
-        background: var(--orange);
-        position: absolute;
-        top: 50px;
-        width: 250px;
-        padding: 10px;
+  .nav-links li {
+    padding: 10px;
+    text-align: center;
+  }
 
-    }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-style: var(--secondary-font);
+  }
 
-    .nav-links.show{
-        display: flex;
-    }
+  .brand-name h1 {
+    margin: 0 !important;
+  }
 
-    .nav-links li{
-        padding: 10px;
-        text-align: center;
-    }
+  .carousel {
+    margin-top: 0 !important;
+  }
 
-    .nav-links a{
-        color: white;
-        text-decoration: none;
-        padding: 10px 0;
-        font-style: var(--secondary-font);
-    }
+  .navbar-native {
+    margin: 0 1.2rem;
+    align-items: center;
+  }
 
-    .brand-name h1{
-        margin: 0 !important;
-    }
+  .burger {
+    display: block;
+  }
 
-    .carousel{
-        margin-top: 0 !important;
-    }
+  .navbar-drawer,
+  .search-input,
+  .login,
+  .searchbar,
+  .card-text {
+    display: none !important;
+  }
 
-    .navbar-native{
-        margin: 0 1.2rem;
-        align-items: center;
-    }
+  .product-card {
+    margin: 0 !important;
+  }
 
-    .burger{
-        display: block;
-    }
+  .card {
+    height: 20rem !important;
+  }
 
-    .navbar-drawer, .search-input, .login, .searchbar, .card-text{
-        display: none !important;
-    }
+  .pre-footer {
+    display: block;
+    text-align: center;
+  }
 
-    .product-card{
-        margin: 0 !important;
-    }
+  .pre-footer-logo img {
+    height: auto;
+    width: 85px;
+  }
 
-    .card{
-        height: 20rem !important;
-    }
-
-
-    .pre-footer{
-        display: block;
-        text-align: center;
-    }
-    
-
-    .pre-footer-logo img{
-        height: auto;
-        width: 85px;
-    }
-
-
-    .laptop-brands, .about-us, .socials{
-        margin-bottom: 20px;
-    }
-
-
+  .laptop-brands,
+  .about-us,
+  .socials {
+    margin-bottom: 20px;
+  }
 }
 
+@media (max-width: 1370px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--orange);
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    padding: 10px;
+  }
 
-@media (max-width: 1370px){
-    
-    .nav-links{
-        display: none;
-        flex-direction: column;
-        background: var(--orange);
-        position: absolute;
-        top: 50px;
-        width: 250px;
-        padding: 10px;
+  .nav-links.show {
+    display: flex;
+  }
 
-    }
+  .nav-links li {
+    padding: 10px;
+    text-align: center;
+  }
 
-    .nav-links.show{
-        display: flex;
-    }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-style: var(--secondary-font);
+  }
 
-    .nav-links li{
-        padding: 10px;
-        text-align: center;
-    }
+  .brand-name h1 {
+    margin: 0 !important;
+  }
 
-    .nav-links a{
-        color: white;
-        text-decoration: none;
-        padding: 10px 0;
-        font-style: var(--secondary-font);
-    }
+  .carousel {
+    margin-top: 0 !important;
+  }
 
-    .brand-name h1{
-        margin: 0 !important;
-    }
+  .navbar-native {
+    margin: 0 1.2rem;
+    align-items: center;
+  }
 
-    .carousel{
-        margin-top: 0 !important;
-    }
+  .burger {
+    display: block;
+  }
 
-    .navbar-native{
-        margin: 0 1.2rem;
-        align-items: center;
-    }
-
-    .burger{
-        display: block;
-    }
-
-    .navbar-drawer, .search-input, .login, .searchbar{
-        display: none !important;
-    }
+  .navbar-drawer,
+  .search-input,
+  .login,
+  .searchbar {
+    display: none !important;
+  }
 }

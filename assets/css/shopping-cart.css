@@ -199,16 +199,14 @@
   overflow-y: auto;
 }
 
-
-
 /* Responsiveness */
 
-@media (max-width: 768px){
-    .shopping-cart-container{
-        display: block;
-    }
+@media (max-width: 768px) {
+  .shopping-cart-container {
+    display: block;
+  }
 
-    .item-card-container{
-        width: auto;
-    }
+  .item-card-container {
+    width: auto;
+  }
 }

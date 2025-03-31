@@ -124,12 +124,12 @@ body {
 
 /* Small devices (≥576px) */
 @media (max-width: 1020px) {
-    .img-info {
-        flex-direction: column;
-        align-items: center;
-    }
-    .images, .info {
-        width: 100%;
-    }
+  .img-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .images,
+  .info {
+    width: 100%;
+  }
 }
-
