@@ -28,6 +28,10 @@
   margin-left: 7rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .product-card {
   min-width: 27.5%;
   width: 4%;

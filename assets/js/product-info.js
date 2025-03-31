@@ -1,31 +1,41 @@
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function () {
   const models = JSON.parse(localStorage.getItem("selectedLaptop"));
 
   if (models) {
-    document.getElementById("current-img").src = "." + models.images[1];
-    document.getElementById("product-name").textContent = models.name;
-    document.getElementById("reviews").innerHTML = models.reviews;
-    document.getElementById("brand-name").textContent = models.brand;
-    document.getElementById("description").textContent = models.description;
-    document.getElementById("price").textContent = models.price;
+    $("#current-img").attr("src", "." + models.images[1]);
+    $("#product-name").text(models.name);
+    $("#reviews").html(models.reviews);
+    $("#brand-name").text(models.brand);
+    $("#description").text(models.description);
+    $("#price").text(models.price);
 
-    document.getElementById("processor").textContent = models.specs.processor;
-    document.getElementById("display").textContent = models.specs.display;
-    document.getElementById("gpu").textContent = models.specs.gpu;
-    document.getElementById("memory").textContent = models.specs.memory;
-    document.getElementById("storage").textContent = models.specs.storage;
-    document.getElementById("os").textContent = models.specs.OS;
+    $("#processor").text(models.specs.processor);
+    $("#display").text(models.specs.display);
+    $("#gpu").text(models.specs.gpu);
+    $("#memory").text(models.specs.memory);
+    $("#storage").text(models.specs.storage);
+    $("#os").text(models.specs.OS);
 
     // image selector
-    const imagesRepository = document.querySelectorAll(".image-repo");
-
-    imagesRepository.forEach((image, index) => {
-      image.src = "." + models.images[index + 1];
-      // console.log(".", models.images[index + 1]);
+    $(".image-repo").each(function (index) {
+      $(this).attr("src", "." + models.images[index + 1]);
+    });
+    $(".image-repo").on("click", function () {
+      $("#current-img").attr("src", $(this).attr("src"));
+      $(".image-repo").removeClass("active");
+      $(this).addClass("active");
     });
   } else {
     console.error("No laptop data found!");
   }
 });
 
-// console.log(localStorage);
+// <div class="image-selector">
+//           <img src="" alt="..." class="image-repo" />
+//           <img src="" alt="..." class="image-repo" />
+//           <img src="" alt="..." class="image-repo" />
+//           <img src="" alt="..." class="image-repo" />
+//         </div>
+//         <div class="display-img">
+//           <img src="" alt="..." id="current-img" />
+//           </div>

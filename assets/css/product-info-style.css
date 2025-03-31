@@ -34,6 +34,14 @@ body {
 }
 .image-repo {
   width: 7rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-color: grey;
+  transition: border 0.2s ease-in-out;
+}
+.image-repo:hover,
+.image-repo.active {
+  border: 2px solid var(--orange);
 }
 .display-img {
   aspect-ratio: 1;
