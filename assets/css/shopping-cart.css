@@ -200,13 +200,146 @@
 }
 
 /* Responsiveness */
-
 @media (max-width: 768px) {
   .shopping-cart-container {
     display: block;
   }
 
+  /* Item Card Container */
+  .product-img {
+    height: 64px;
+    width: 64px;
+  }
+
+  .product-name {
+    max-width: 80%;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .quantity-selector-tally i {
+    transform: scale(0.6);
+  }
+
   .item-card-container {
     width: auto;
   }
+
+  #item-card-header {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  #item-card-body {
+    padding: 1rem;
+  }
+
+  .product-item, #item-card-header div:first-child {
+    min-width: 60%;
+    max-width: 60%;
+  }
+
+  .quantity-selector, #item-card-header div:nth-child(2) {
+    min-width: 17.5%;
+    max-width: 17.5%;
+  }
+
+  .product-total, #item-card-header div:nth-child(3) {
+    min-width: 22.5%;
+    max-width: 22.5%;
+  }
+
+  .product-total {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .product-total-value {
+    max-width: 75%;
+  }
+
+  .quantity-selector {
+    width: fit-content;
+  }
+
+  .subtract-button-container {
+    margin-right: -16px;
+  }
+
+  .add-button-container {
+    margin-left: -16px;
+  }
+
+  .product-total-value {
+    margin: 0;
+  }  
+  /* End of Item Card Container */
+
+  /* Checkout Container */
+  .checkout-container {
+    width: auto;
+    margin-top: 5vh;
+    height: 50vh;
+  }
+
+  #checkout-body {
+    overflow-y: auto;
+  }
+
+  .total-cost {
+    max-width: 80%;
+  }
+  /* End of Checkout Container */
 }
+
+@media (min-width: 768px) and (max-width: 921px) {
+  .shopping-cart-container {
+    display: block;
+  }
+
+  .item-card-container, .checkout-container {
+    width: auto;
+  }
+
+  .checkout-container {
+    margin-top: 10vh;
+  }
+
+  .product-total {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .product-total-value {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 922px) and (max-width: 1370px) {
+  .total-cost-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    overflow: hidden;
+  }
+
+  .product-total {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .product-name {
+    max-width: 80%;
+  }
+
+  .product-total-value {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1380px) and (max-width: 1480px) {
+  .total-cost {
+    max-width: 80%;
+  }
+}
+/* End of Responsiveness */

@@ -35,12 +35,29 @@
     <link rel="stylesheet" href="../assets/css/shopping-cart.css" />
     <link rel="icon" href="../assets/images/Favicon.png" />
     <script src="../assets/js/jquery-3.7.1.min.js"></script>
+      <!-- Burger Js -->
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("show");
+      }
+    </script>
   </head>
   <body>
     <!-- NAVBAR -->
     <div class="main-nav">
       <nav>
         <div class="navbar-native">
+          <i class="fa-solid fa-bars burger" onclick="toggleMenu()">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="pages/login.html">Login / Signup</a>
+              <a href="pages/lenovo-page.html">Lenovo</a>
+              <a href="pages/hp-page.html">Hp</a>
+              <a href="pages/asus-page.html">Asus</a>
+              <a href="pages/alienware-page.html">Alienware</a>
+              <a href="pages/acer-page.html">Acer</a>
+            </div>
+          </i>
           <div class="brand-name">
             <a href="../index.html"
               ><h1>Gizmo<span>Cart</span></h1></a
