@@ -1,3 +1,5 @@
-function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("show");
-  }
+$(document).ready(function () {
+  $(".burger").on("click", function () {
+    $(".nav-links").toggleClass("show");
+  });
+});

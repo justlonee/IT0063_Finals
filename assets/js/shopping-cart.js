@@ -26,7 +26,7 @@ $(document).ready(function () {
     $(".card-item").empty();
 
     cart.forEach((product) => {
-      product.image = "." + product.image;  // fixes link error by backtracking the directory
+      product.image = "." + product.image; // fixes link error by backtracking the directory
       const productHtml = `
       <div class="placeholder-item" data-name="${product.name}">
               <div class="product-item">
@@ -68,14 +68,23 @@ $(document).ready(function () {
       let productQuantity = parseFloat(product.quantity);
       let productTotalCost = productPrice * productQuantity;
 
-      $(`.placeholder-item[data-name="${product.name}"] .product-total-value`)
-      .text(`₱${parseFloat(productTotalCost).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`); // replace adds comma separators every 3 digits
+      $(
+        `.placeholder-item[data-name="${product.name}"] .product-total-value`
+      ).text(
+        `₱${parseFloat(productTotalCost)
+          .toFixed(2)
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
+      ); // replace adds comma separators every 3 digits
 
       totalCost += productTotalCost;
     });
 
     $("#page-title span").text(`(${productItemCount} Items)`);
-    $(".total-cost").text(`₱${parseFloat(totalCost).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`); // replace adds comma separators every 3 digits
+    $(".total-cost").text(
+      `₱${parseFloat(totalCost)
+        .toFixed(2)
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
+    ); // replace adds comma separators every 3 digits
   }
 
   // Function that passes the comment value each change
@@ -144,6 +153,13 @@ $(document).ready(function () {
 
   // Proceeds to the checkout window
   checkout = checkoutButton.on("click", function (e) {
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (currentUser == null || currentUser == undefined) {
+      alert("You must be logged in to check out");
+      window.location.replace("../pages/login.html");
+      return;
+    }
+
     let totalCost = parseFloat(
       $(".total-cost")
         .text()
@@ -182,12 +198,12 @@ $(document).ready(function () {
   });
 
   // Purchase notification button
-  $(".purchase-btn").on("click", function(e) {
+  $(".purchase-btn").on("click", function (e) {
     e.preventDefault();
-    
+
     let validForm = $("#order-form")[0].checkValidity();
     let totalCost = $(".total-cost").last().text();
-  
+
     if (!validForm) {
       $("#order-form")[0].reportValidity();
       alert("Please fill out the incomplete details.");
