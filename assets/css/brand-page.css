@@ -25,7 +25,6 @@
 .product-card {
   min-width: 27.5%;
   width: 4%;
-  height: 720px;
   /* border: 2px solid red; */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 1rem;
@@ -46,6 +45,13 @@
 .card-body {
   padding: 0 2.1rem 0 2.1rem !important;
   /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.card {
+  height: auto;
 }
 
 .card a {

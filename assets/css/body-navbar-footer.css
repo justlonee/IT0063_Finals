@@ -211,6 +211,10 @@ a {
     gap: 20px;
 } */
 
+.pre-footer h2 {
+  text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
