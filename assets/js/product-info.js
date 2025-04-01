@@ -42,7 +42,7 @@ $(document).ready(function () {
       );
 
       if (existingProductIndex !== -1) {
-        cart[existingProductIndex].quantity += 1;
+        cart[existingProductIndex].quantity += productQuantity;
       } else {
         cart.push(product);
       }
