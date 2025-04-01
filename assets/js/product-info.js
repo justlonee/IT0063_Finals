@@ -28,17 +28,24 @@ $(document).ready(function () {
 
     $("#add-to-cart").one("click", function () {
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let productQuantity = parseInt($("#quantity").val()) || 1;
+
       const product = {
         name: models.name,
         price: models.price,
         image: models.images[1],
-        quantity: 1,
+        quantity: productQuantity,
       };
 
       const existingProductIndex = cart.findIndex(
         (item) => item.name === product.name
       );
-      cart.push(product);
+
+      if (existingProductIndex !== -1) {
+        cart[existingProductIndex].quantity += 1;
+      } else {
+        cart.push(product);
+      }
 
       localStorage.setItem("cart", JSON.stringify(cart));
       alert("Product added to cart successfully.");
