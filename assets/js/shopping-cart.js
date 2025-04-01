@@ -29,19 +29,28 @@ $(document).ready(function () {
 
   // Dynamically updates the card everytime a change is made
   function updateCart() {
+    
     const productItem = $(".placeholder-item");
     let productItemCount = $(".placeholder-item").length;
     let totalCost = 0;
 
     // Loops through each of the HTML's product items
     productItem.each(function () {
+      const models = JSON.parse(localStorage.getItem("selectedLaptop"));
+
+      let modelName = models.name;
+      $(".product-name").html(`${modelName}`);
+
+      let modelImage = models.images[1];
+      $(".product-img").attr("src", "." + modelImage);
+
+      let modelPriceRaw = models.price;
+      $(".product-cost").html(`<span>${modelPriceRaw}</span>`);
+
+      let modelPrice = parseFloat(modelPriceRaw.replace(/[^\d.]/g, ""));
+
       let quantity = parseInt($(this).find(".item-quantity").text()) || 1;
-      let itemBasePriceText = $(this)
-        .find(".product-cost span")
-        .text()
-        .replace(/[^\d.]/g, "");
-      let itemBasePrice = parseFloat(itemBasePriceText);
-      let itemTotalPrice = itemBasePrice * quantity;
+      let itemTotalPrice = modelPrice * quantity;
       totalCost += itemTotalPrice;
 
       $(this)
