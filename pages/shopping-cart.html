@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="../assets/css/shopping-cart.css" />
     <link rel="icon" href="../assets/images/Favicon.png" />
     <script src="../assets/js/jquery-3.7.1.min.js"></script>
-      <!-- Burger Js -->
+    <!-- Burger Js -->
     <script>
       function toggleMenu() {
         document.querySelector(".nav-links").classList.toggle("show");
@@ -47,7 +47,6 @@
     <div class="main-nav">
       <nav>
         <div class="navbar-native">
-
           <!-- BURGER -->
           <i class="fa-solid fa-bars burger" onclick="toggleMenu()">
             <div class="nav-links">
@@ -102,7 +101,7 @@
     </div>
     <!-- END OF NAVBAR -->
     <!-- SHOPPING CART BODY -->
-    <h1 id="page-title">My Shopping Cart <span>(4 Items)</span></h1>
+    <h1 id="page-title">My Shopping Cart <span></span></h1>
     <div class="shopping-cart-container">
       <div class="item-card-container">
         <div class="card">
@@ -112,6 +111,7 @@
             <div><b>Total</b></div>
           </div>
           <div class="card-body" id="item-card-body">
+            <div class="card-item"></div>
             <!-- PLACEHOLDER TEMPLATE FOR PRODUCT ITEMS -->
             <!-- YOU CAN CHANGE THE CLASS NAME AND CONTENTS IF YOU WANT -->
             <!-- JUST MAKE SURE TO CHANGE CSS AS NECESSARY -->
@@ -150,38 +150,8 @@
               <hr />
             </div>
             -->
-            <div class="placeholder-item">
-              <div class="product-item">
-                <div>
-                  <img src="../assets/images/Favicon.png" class="product-img" />
-                </div>
-                <div>
-                  <h5 class="card-title product-name"></h5>
-                  <p class="card-text product-cost"><span></span></p>
-                </div>
-              </div>
-              <div class="quantity-selector">
-                <div class="quantity-selector-tally">
-                  <div class="subtract-button-container">
-                    <i
-                      class="fa-solid fa-square-minus fa-2xl subtract-button"
-                    ></i>
-                  </div>
-                  <div class="item-quantity-container">
-                    <h1 class="item-quantity">1</h1>
-                  </div>
-                  <div class="add-button-container">
-                    <i class="fa-solid fa-square-plus fa-2xl add-button"></i>
-                  </div>
-                </div>
-                <p class="card-text remove-product">Remove</p>
-              </div>
-              <div class="product-total">
-                <p class="product-total-value"></p>
-              </div>
-              <hr />
-            </div>
-            <hr class="product-divider" />
+            <!--  -->
+            <!-- DO NOT PASTE OVER THIS FUCKING LINE -->
           </div>
         </div>
       </div>

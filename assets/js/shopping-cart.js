@@ -13,10 +13,6 @@ let saveComment;
 let checkout;
 let closeModal;
 
-// Button variables
-const addItemButton = $(".add-button");
-const subtractItemButton = $(".subtract-button");
-const removeProductButton = $(".remove-product");
 const saveCommentButton = $(".send-instructions");
 const checkoutButton = $(".checkout-btn");
 const closeModalButton = $(".close-modal");
@@ -29,36 +25,54 @@ $(document).ready(function () {
 
   // Dynamically updates the card everytime a change is made
   function updateCart() {
-    
-    const productItem = $(".placeholder-item");
-    let productItemCount = $(".placeholder-item").length;
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let productItemCount = cart.length;
     let totalCost = 0;
+    console.log(cart);
 
-    // Loops through each of the HTML's product items
-    productItem.each(function () {
-      const models = JSON.parse(localStorage.getItem("selectedLaptop"));
+    $(".card-item").empty();
 
-      let modelName = models.name;
-      $(".product-name").html(`${modelName}`);
+    cart.forEach((product) => {
+      const productHtml = `
+      <div class="placeholder-item" data-name="${product.name}">
+              <div class="product-item">
+                <div>
+                  <img src="${product.image}" class="product-img" />
+                </div>
+                <div>
+                  <h5 class="card-title product-name">${product.name}</h5>
+                  <p class="card-text product-cost">${product.price}</p>
+                </div>
+              </div>
+              <div class="quantity-selector">
+                <div class="quantity-selector-tally">
+                  <div class="subtract-button-container">
+                    <i
+                      class="fa-solid fa-square-minus fa-2xl subtract-button"
+                    ></i>
+                  </div>
+                  <div class="item-quantity-container">
+                    <h1 class="item-quantity">${product.quantity}</h1>
+                  </div>
+                  <div class="add-button-container">
+                    <i class="fa-solid fa-square-plus fa-2xl add-button"></i>
+                  </div>
+                </div>
+                <p class="card-text remove-product">Remove</p>
+              </div>
+              <div class="product-total">
+                <p class="product-total-value"></p>
+              </div>
+              <hr />
+            </div>
+            <hr class="product-divider" />
+      `;
 
-      let modelImage = models.images[1];
-      $(".product-img").attr("src", "." + modelImage);
+      $(".card-item").append(productHtml);
 
-      let modelPriceRaw = models.price;
-      $(".product-cost").html(`<span>${modelPriceRaw}</span>`);
-
-      let modelPrice = parseFloat(modelPriceRaw.replace(/[^\d.]/g, ""));
-
-      let quantity = parseInt($(this).find(".item-quantity").text()) || 1;
-      let itemTotalPrice = modelPrice * quantity;
-      totalCost += itemTotalPrice;
-
-      $(this)
-        .find(".product-total-value")
-        .text(`₱${itemTotalPrice.toFixed(2)}`);
+      totalCost += product.price * product.quantity;
     });
 
-    // Dynamically changes item count of the title and total cost
     $("#page-title span").text(`(${productItemCount} Items)`);
     $(".total-cost").text(`₱${totalCost.toFixed(2)}`);
   }
@@ -69,32 +83,40 @@ $(document).ready(function () {
   }
 
   // Tally counter for individual product count (increment)
-  addItem = addItemButton.on("click", function () {
-    let $count = $(this)
-      .closest(".quantity-selector-tally")
-      .find(".item-quantity");
-    let addedCount = parseInt($count.text()) + 1;
-    $count.text(addedCount);
-    updateCart();
+  $(".card-item").on("click", ".add-button", function () {
+    const productName = $(this).closest(".placeholder-item").data("name");
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const productIndex = cart.findIndex(
+      (product) => product.name === productName
+    );
+    if (productIndex !== -1) {
+      cart[productIndex].quantity += 1;
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateCart();
+    }
   });
 
   // Tally counter for individual product count (decrement)
-  subtractItem = subtractItemButton.on("click", function () {
-    let $count = $(this)
-      .closest(".quantity-selector-tally")
-      .find(".item-quantity");
-    let currentCount = parseInt($count.text());
-    if (currentCount > 1) {
-      $count.text(currentCount - 1);
+  $(".card-item").on("click", ".subtract-button", function () {
+    const productName = $(this).closest(".placeholder-item").data("name");
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const productIndex = cart.findIndex(
+      (product) => product.name === productName
+    );
+    if (productIndex !== -1 && cart[productIndex].quantity > 1) {
+      cart[productIndex].quantity -= 1;
+      localStorage.setItem("cart", JSON.stringify(cart));
       updateCart();
     }
   });
 
   // Removes the product entirely from the product list
-  removeProduct = removeProductButton.on("click", function () {
-    let productItem = $(this).closest(".placeholder-item");
-    productItem.next(".product-divider").remove();
-    productItem.remove();
+  $(".card-item").on("click", ".remove-product", function () {
+    const productName = $(this).closest(".placeholder-item").data("name");
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart = cart.filter((product) => product.name !== productName);
+    $(".card-item").html(``);
+    localStorage.setItem("cart", JSON.stringify(cart));
     updateCart();
   });
 
