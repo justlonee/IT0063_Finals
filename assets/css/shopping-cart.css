@@ -42,6 +42,10 @@
   overflow-y: auto;
 }
 
+.card-item {
+  margin: 0rem 1rem;
+}
+
 #item-card-header div:first-child,
 .product-item {
   width: 65%;
@@ -211,6 +215,10 @@
     width: 64px;
   }
 
+  .card-item {
+    margin: 0;
+  }
+
   .product-name {
     max-width: 80%;
     font-size: 1rem;
@@ -293,6 +301,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 921px) {
+  .card-item {
+    margin: 0;
+  }
+
   .shopping-cart-container {
     display: block;
   }
@@ -316,6 +328,10 @@
 }
 
 @media (min-width: 922px) and (max-width: 1370px) {
+  .card-item {
+    margin: 0;
+  }
+
   .total-cost-container {
     display: flex;
     flex-direction: column;
@@ -338,6 +354,10 @@
 }
 
 @media (min-width: 1380px) and (max-width: 1480px) {
+  .card-item {
+    margin: 0;
+  }
+
   .total-cost {
     max-width: 80%;
   }
