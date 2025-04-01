@@ -3,10 +3,13 @@ $(document).ready(function () {
 
   if (user) {
     $(".username").html(
-      `<span>${user.username}</span>`
+      `<span>${user.username} | </span>`
     );
     $(".login").html(
-      `| Logout`
+      `Logout`
+    );
+    $(".login-burger").html(
+      `Logout`
     );
   }
 
