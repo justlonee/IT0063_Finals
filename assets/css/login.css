@@ -55,3 +55,18 @@ body {
 #pass-reset a {
   text-decoration: none;
 }
+
+
+/* Responsiveness */
+
+@media (max-width: 768px){
+  #login{
+    width: 85% !important;
+  }
+}
+
+@media (max-width: 1370px){
+  #login{
+    width: 50%;
+  }
+}

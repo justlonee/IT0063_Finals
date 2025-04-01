@@ -1,3 +1,3 @@
-$(document).ready(function (){
-    $(".nav-links").toggleClass("show")
-})
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("show");
+  }
