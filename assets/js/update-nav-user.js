@@ -3,12 +3,14 @@ $(document).ready(function () {
 
   if (user) {
     $(".username").html(
-      `<span>${user.username}</span> | <a href="#" id="logout">Logout</a>`
+      `<span>${user.username}</span>`
     );
-    $(".login").html(``);
+    $(".login").html(
+      `| Logout`
+    );
   }
 
-  $("#logout").on("click", function () {
+  $(".login").on("click", function () {
     localStorage.removeItem("currentUser");
     location.reload();
   });
