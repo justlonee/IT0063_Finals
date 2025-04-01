@@ -25,6 +25,24 @@ $(document).ready(function () {
       $(".image-repo").removeClass("active");
       $(this).addClass("active");
     });
+
+    $("#add-to-cart").one("click", function () {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const product = {
+        name: models.name,
+        price: models.price,
+        image: models.images[1],
+        quantity: 1,
+      };
+
+      const existingProductIndex = cart.findIndex(
+        (item) => item.name === product.name
+      );
+      cart.push(product);
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert("Product added to cart successfully.");
+    });
   } else {
     console.error("No laptop data found!");
   }
