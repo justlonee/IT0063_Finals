@@ -60,13 +60,15 @@ body {
 /* Responsiveness */
 
 @media (max-width: 768px){
-  #login{
+  #login, #register, #pass-reset{
     width: 85% !important;
   }
 }
 
 @media (max-width: 1370px){
-  #login{
+  #login, 
+  #register, 
+  #pass-reset {
     width: 50%;
   }
 }
