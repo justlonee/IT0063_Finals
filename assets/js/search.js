@@ -1,9 +1,8 @@
 $(document).ready(function () {
-  $("#search-button").on("click", function () {
+  function search() {
     const searchQuery = $("#search-input").val().toLowerCase();
 
     if (!searchQuery) {
-      alert("Test");
       return;
     }
 
@@ -17,7 +16,17 @@ $(document).ready(function () {
         ? "./product-info.html"
         : "./pages/product-info.html";
     } else {
-      // msg alert
+      alert("No matches found.");
+    }
+  }
+  $("#search-button").on("click", search);
+  $("#search-input").on("keyup", function (event) {
+    var keycode = event.keyCode || event.which;
+    if (keycode == 13 && $("#search-input").val() != "") {
+      search();
     }
   });
 });
+
+// https://stackoverflow.com/questions/25494133/how-to-combine-two-event-handlers-into-one-in-jquery
+// https://stackoverflow.com/questions/979662/how-can-i-detect-pressing-enter-on-the-keyboard-using-jquery

@@ -1,3 +1,4 @@
+let users;
 $(document).ready(function () {
   // Initially shows the login section
   $("#login").addClass("active");
@@ -24,12 +25,47 @@ $(document).ready(function () {
 
   // Password validation
   $("#register form").on("submit", function (e) {
+    e.preventDefault();
+    const username = $("#register-username").val();
     const password = $("#register-password").val();
     const confirmPassword = $("#register-confirm-password").val();
 
     if (password !== confirmPassword) {
-      e.preventDefault();
       alert("Passwords do not match. Please try again.");
+    }
+
+    users = JSON.parse(localStorage.getItem("users")) || [];
+
+    if (users.some((user) => user.username === username)) {
+      alert("Username has already been taken.");
+      return;
+    }
+
+    users.push({ username, password });
+    localStorage.setItem("users", JSON.stringify(users));
+
+    alert("Registration successful. You may now log in.");
+    window.location.href = "login.html";
+  });
+
+  $("#login form").on("submit", function (e) {
+    e.preventDefault();
+    const password = $("#login-password").val();
+    const username = $("#login-username").val();
+
+    users = JSON.parse(localStorage.getItem("users")) || [];
+
+    let user = users.find(
+      (user) => user.username === username && user.password === password
+    );
+
+    if (user) {
+      localStorage.setItem("currentUser", JSON.stringify(user));
+      alert("Login successful. You may now continue to the website.");
+      window.location.href = "../index.html";
+    } else {
+      console.log(users);
+      alert("Incorrect username or password. Please try again.");
     }
   });
 
