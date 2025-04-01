@@ -181,19 +181,25 @@ $(document).ready(function () {
     checkoutModal.hide();
   });
 
-  // Unfinished purchase notification button
-  /*
+  // Purchase notification button
   $(".purchase-btn").on("click", function(e) {
-    let validForm = $("#order-form").checkValidity();
-
+    e.preventDefault();
+    
+    let validForm = $("#order-form")[0].checkValidity();
+    let totalCost = $(".total-cost").last().text();
+  
     if (!validForm) {
-      e.preventDefault();
-      $("#order-form").reportValidity();
+      $("#order-form")[0].reportValidity();
+      alert("Please fill out the incomplete details.");
     } else {
-      alert("Your order has been placed!");
+      alert(`Your order has been placed!\nTotal cost: ${totalCost}`);
+      $("#order-form").find("input, textarea, select").val("");
+      $("#order-form").find("input[type='radio']").prop("checked", false);
+      localStorage.removeItem("cart");
+      updateCart();
+      checkoutModal.hide();
     }
   });
-  */
 
   // Refreshes the changes at the end
   updateCart();
