@@ -141,3 +141,32 @@ body {
     width: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  .add-to-cart-btn {
+    width: 65%;
+  }
+  .specific-spec {
+    margin-left: 1rem;
+  }
+  .basic-specs {
+    margin: 1rem 1rem;
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .add-to-cart-btn {
+    width: 65%;
+  }
+  .specific-spec {
+    margin-left: 1rem;
+  }
+  .basic-specs {
+    margin: 1rem 1rem;
+    padding: 2rem 2rem;
+  }
+  .image-selector {
+    display: none;
+  }
+}

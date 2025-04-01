@@ -1,3 +1,5 @@
-$(document).ready(function (){
-    $(".nav-links").toggleClass("show")
-})
+$(document).ready(function () {
+  $(".burger").on("click", function () {
+    $(".nav-links").toggleClass("show");
+  });
+});

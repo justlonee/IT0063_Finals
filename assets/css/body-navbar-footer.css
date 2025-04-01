@@ -339,3 +339,61 @@ a {
     display: none !important;
   }
 }
+
+@media (max-width: 780px){
+  .pre-footer{
+    display: block;
+    text-align: center;
+  }
+
+
+  .pre-footer-logo img {
+    height: auto;
+    width: 85px;
+  }
+
+  .laptop-brands,
+  .about-us,
+  .socials {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 1450px){
+  /* .pre-footer{
+    display: block;
+    text-align: center;
+  } */
+
+
+  .pre-footer-logo img {
+    height: auto;
+    width: 15rem;
+  }
+
+  .laptop-brands,
+  .about-us,
+  .socials {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1300px){
+  .pre-footer{
+    display: block;
+    text-align: center;
+  }
+
+
+  .pre-footer-logo img {
+    height: auto;
+    width: 20%;
+  }
+
+  .laptop-brands,
+  .about-us,
+  .socials {
+    margin-bottom: 20px;
+  }
+}

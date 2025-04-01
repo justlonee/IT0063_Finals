@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function () {
   new Swiper(".featured-laptops, .gaming-laptops, .office-laptops", {
     slidesPerView: 3,
     spaceBetween: 10,

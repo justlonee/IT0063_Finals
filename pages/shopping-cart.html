@@ -35,12 +35,6 @@
     <link rel="stylesheet" href="../assets/css/shopping-cart.css" />
     <link rel="icon" href="../assets/images/Favicon.png" />
     <script src="../assets/js/jquery-3.7.1.min.js"></script>
-    <!-- Burger Js -->
-    <script>
-      function toggleMenu() {
-        document.querySelector(".nav-links").classList.toggle("show");
-      }
-    </script>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -48,18 +42,18 @@
       <nav>
         <div class="navbar-native">
           <!-- BURGER -->
-          <i class="fa-solid fa-bars burger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars burger">
             <div class="nav-links">
-              <a href="index.html">Home</a>
-              <a href="pages/login.html" class="login-burger">Login / Signup</a>
-              <a href="pages/lenovo-page.html">Lenovo</a>
-              <a href="pages/hp-page.html">Hp</a>
-              <a href="pages/asus-page.html">Asus</a>
-              <a href="pages/alienware-page.html">Alienware</a>
-              <a href="pages/acer-page.html">Acer</a>
+              <a href="../index.html">Home</a>
+              <a href="login.html" class="login-burger">Login / Signup</a>
+              <a href="lenovo-page.html">Lenovo</a>
+              <a href="hp-page.html">Hp</a>
+              <a href="asus-page.html">Asus</a>
+              <a href="alienware-page.html">Alienware</a>
+              <a href="acer-page.html">Acer</a>
             </div>
           </i>
-          <!-- END OF BURGER -->
+          <!-- END BURGER -->
 
           <div class="brand-name">
             <a href="../index.html"
@@ -151,7 +145,7 @@
             </div>
             -->
             <!--  -->
-            <!-- DO NOT PASTE OVER THIS FUCKING LINE -->
+            <!-- DO NOT PASTE OVER THIS LINE -->
           </div>
         </div>
       </div>
@@ -180,7 +174,7 @@
             <p class="card-text checkout-note">
               Taxes and shipping calculated at checkout.
             </p>
-            <button type="button" class="btn checkout-btn">Checkout</button>
+            <button type="button" class="btn checkout-btn" id="checkout-btn">Checkout</button>
           </div>
         </div>
       </div>
@@ -277,7 +271,7 @@
                   type="radio"
                   name="payment-method"
                   id="cod"
-                  checked
+                  required
                 />
                 <label class="form-check-label" for="cod">
                   Cash on Delivery (CoD)
@@ -373,10 +367,10 @@
       <p>&copy;2025 by GizmoCart. All Rights Reserved.</p>
     </div>
     <!-- END OF FOOTER -->
+    <script src="../assets/js/burger.js"></script>
     <script src="../assets/js/data.js"></script>
     <script src="../assets/js/search.js"></script>
     <script src="../assets/js/update-nav-user.js"></script>
-    <script src="../assets/js/burger.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
